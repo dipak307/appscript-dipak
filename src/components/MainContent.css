@@ -1,0 +1,37 @@
+/* MainContent.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to next line on smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; /* Adjust as needed */
+  }
+  
+  .content-item {
+    text-decoration: none; /* Remove default underline */
+    color: #333; /* Set link color */
+    padding: 10px; /* Add padding to make clickable area larger */
+  }
+  
+  .content-item:hover {
+    color: blue; /* Change color on hover */
+  }
+  
+  /* Responsive Styles */
+  @media only screen and (max-width: 768px) {
+    .content {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: center; /* Center align items on smaller screens */
+    }
+  
+    .content-item {
+      margin-top: 10px; /* Add spacing between items on smaller screens */
+    }
+  }
+  

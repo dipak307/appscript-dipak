@@ -1,0 +1,37 @@
+.column.recommendations {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .column.recommendations h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .column.recommendations select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .recommend {
+    margin-left: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media only screen and (max-width: 768px) {
+    .column.recommendations {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .recommend {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+  

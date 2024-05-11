@@ -1,0 +1,52 @@
+/* Product.css */
+
+.product {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    width: calc(100% - 20px); /* Adjust width to full width with some margin */
+    box-sizing: border-box; /* Ensure padding and border are included in the width calculation */
+  }
+  
+  .product img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .product h3 {
+    margin-top: 10px;
+  }
+  
+  .product p {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .product button:hover {
+    background-color: #0056b3;
+  }
+  
+  .heart {
+    cursor: pointer;
+    margin-left: 10px; /* Adjust margin for smaller screens */
+  }
+  
+  /* Responsive Styles */
+  @media only screen and (min-width: 768px) {
+    .product {
+      width: calc(33.33% - 20px); /* Ensure each product takes up one-third of the container width with some margin */
+    }
+  }
+  

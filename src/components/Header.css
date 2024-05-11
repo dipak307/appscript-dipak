@@ -1,0 +1,30 @@
+/* Header.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .logo img{
+    /* Styles for the logo */
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+  }
+  
+  /* Responsive Styles */
+  @media only screen and (max-width: 768px) {
+    .header {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    .logo {
+      margin-bottom: 10px; /* Add spacing below the logo on smaller screens */
+    }
+  }
+  
+  

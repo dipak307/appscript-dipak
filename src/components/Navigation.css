@@ -1,0 +1,54 @@
+/* Navigation.css */
+
+.navigation-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation-list li {
+    display: block; /* Change to block to stack items vertically on mobile */
+    margin-bottom: 10px; /* Add spacing between items on mobile */
+  }
+  
+  .navigation-list li:last-child {
+    margin-bottom: 0; /* Remove margin bottom for last item */
+  }
+  
+  .navigation-list li a {
+    text-decoration: none;
+    color: #333;
+    display: block; /* Change to block to make full-width clickable area */
+  }
+
+  .menu-bar {
+    display: none;
+  }
+
+  .close-menu{
+    display: none;
+  }
+  
+  
+  /* Responsive Styles */
+  @media only screen and (min-width: 768px) {
+    .navigation-list li {
+      display: inline-block; /* Restore inline-block display on larger screens */
+      margin-right: 20px;
+      margin-bottom: 0; /* Remove margin bottom added for mobile */
+    }
+   
+    .navigation-list li:last-child {
+      margin-right: 0; /* Restore margin right for last item */
+    }
+  }
+
+  @media only screen and (max-width:768px) {
+    .menu{
+        display: none;
+    }
+    .menu-bar{
+        display: block;
+    }
+  }
+  

@@ -1,0 +1,44 @@
+.column.customize {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.column.customize > div {
+  margin-bottom: 10px;
+}
+
+.column.customize label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.column.customize select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.column.customize input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .column.customize {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .column.customize > div {
+    margin-bottom: 8px;
+  }
+
+  .column.customize select {
+    padding: 6px;
+  }
+}
