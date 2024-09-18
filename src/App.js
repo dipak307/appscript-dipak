@@ -1,32 +1,25 @@
-import React, { useState } from 'react';
-import './App.css';
-import Header from './components/Header';
-import MainContent from './components/MainContent';
-import Footer from './components/Footer';
-import ProductContent from './product/ProductContent';
+import React from 'react';
+import Login from './Pages/Login';
+import Register from './Pages/Register';
+import { Route, Routes } from 'react-router-dom';
+import Dashboard from './Components/Dashboard'; 
+import Home from './Components/Home';
+import Leaderboard from './Components/Leaderboards';
 
 function App() {
-  const [searchTerm, setSearchTerm] = useState('');
-
-  const handleSearch = (term) => {
-    setSearchTerm(term);
-  }
-
   return (
     <>
-      <Header onSearch={handleSearch} />
       <div className='App'>
-        <MainContent />
-        <div className="product-discovery">
-          <h1>Discover our Products</h1>
-          <p>Welcome to our product page where you can see new product here choose your favorite product !</p>
-          <div className="columns">
-            <div className='two'>
-              <ProductContent searchTerm={searchTerm} />
-            </div>
-          </div>
-        </div>
-        <Footer />
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+          
+          {/* Dashboard path should also render Home by default */}
+          <Route path="/" element={<Dashboard />}>
+            <Route index element={<Home />} /> {/* Default Route as Home */}
+            <Route path="/leaderboard" element={<Leaderboard />} /> {/* Leaderboard Route */}
+          </Route>
+        </Routes>
       </div>
     </>
   );
